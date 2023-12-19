@@ -38,6 +38,8 @@ function displayBlogPosts(posts) {
         <p>${post.user.name}</p>
       </div>
       <p><b>${post.tag_list.join(", ")}</b></p>
+       <p>Published Date: ⏰ ${post.readable_publish_date}</p>
+       <p>Reading time: 📖 ${post.reading_time_minutes}</p>
       <p>Reactions: ❤️ ${post.public_reactions_count}</p>
       <a href="${post.url}" target="_blank" class="read-more-btn">Read More</a>
     `;

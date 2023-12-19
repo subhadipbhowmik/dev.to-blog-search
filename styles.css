@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.blog-posts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.blog-post {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-post h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  display: block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.blog-post .user-info {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: left; /* Center content horizontally */
+}
+
+.blog-post img.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Make the image round */
+  margin-right: 10px; /* Add spacing between image and text */
+}
+
+.blog-post .user-info p {
+  margin: 0;
+  font-weight: bold; /* Optionally bold the username */
+}
+
+/* Updated styling for the input form section */
+/* ... (previously defined styles) ... */
+
+.username-form {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#usernameInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling for different screen sizes */
+@media screen and (max-width: 768px) {
+  .blog-posts-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 posts per row for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-posts-container {
+    grid-template-columns: 1fr; /* 1 post per row for mobile devices */
+  }
+
+  .blog-post img.profile-image {
+    width: 30px; /* Adjust the profile image size for mobile */
+    height: 30px;
+  }
+
+  .blog-post .user-info {
+    flex-direction: column; /* Display user info in a column on mobile */
+    align-items: center;
+    text-align: center;
+  }
+
+  .blog-post .user-info img.profile-image {
+    margin-right: 0; /* Remove margin for profile image on mobile */
+    margin-bottom: 5px; /* Add spacing between image and username */
+  }
+}

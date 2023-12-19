@@ -2,6 +2,10 @@
 
 This project is a simple web application that allows users to fetch blog posts from Dev.to based on a provided username.
 
+![devto-blog-post-fetcher](https://i.ibb.co/p43MMgB/devto-blog-post-fetcher.png)
+
+**Demo**: [View Demo](https://subhadipbhowmik.github.io/dev.to-blog-search/)
+
 ## Features
 
 - Fetch blog posts by entering a Dev.to username.

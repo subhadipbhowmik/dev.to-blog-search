@@ -48,5 +48,3 @@ function displayBlogPosts(posts) {
   blogPostsContainer.appendChild(blogPostsGrid);
   blogPostsContainer.classList.remove("hidden");
 }
-
-//
